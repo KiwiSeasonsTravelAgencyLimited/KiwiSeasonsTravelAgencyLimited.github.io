@@ -3,45 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KIWI SEASONS TRAVEL AGENCY LIMITED</title>
+  <title>Kiwi Seasons Travel</title>
   <style>
-    <footer style="background-color: #000; color: white; padding: 2rem 1rem; display: flex; flex-wrap: wrap; justify-content: space-around; text-align: left;">
-      <div>
-        <h3>为什么选择我们</h3>
-        <p>我们热爱分享新西兰的自然之美</p>
-        <p>提供独特而真实的旅行体验</p>
-        <p>小团体出行，更加贴心</p>
-        <p>致力于可持续旅游</p>
-      </div>
-      <div>
-        <h3>推荐行程</h3>
-        <p><a href="tours.html" style="color: gold;">生态探险 Eco Tours</a></p>
-        <p><a href="tours.html" style="color: gold;">城市漫游 City Tours</a></p>
-        <p><a href="tours.html" style="color: gold;">南岛深度 South Island</a></p>
-      </div>
-      <div>
-        <h3>联系我们</h3>
-        <p>Kiwi Seasons Travel</p>
-        <p><a href="mailto:travel@kiwiseasons.co.nz" style="color: gold;">travel@kiwiseasons.co.nz</a></p>
-        <p>
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WeChat" width="24" />
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="24" />
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" />
-        </p>
-      </div>
-    </footer>
-    
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('https://raw.githubusercontent.com/KiwiSeasonsTravelAgencyLimited/KiwiSeasonsTravelAgencyLimited.github.io/refs/heads/main/background.jpg');
+      background-image: url('https://raw.githubusercontent.com/KiwiSeasonsTravelAgencyLimited/KiwiSeasonsTravelAgencyLimited.github.io/main/background.jpg');
       background-size: cover;
       background-position: center;
       color: white;
       text-align: center;
-      <p style="text-align: center; font-size: 0.8rem; background-color: #111; color: #ccc; padding: 1rem; margin: 0;">
-        © Kiwi Seasons Travel 2025 – Website proudly created by Sara Jin
-      </p>
     }
 
     nav {
@@ -66,17 +37,56 @@
     .hero h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .hero span {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 400;
     }
 
     .hero p {
       font-size: 1.3rem;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 1rem auto;
     }
 
     .contact {
       margin-top: 2rem;
       font-size: 1rem;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: left;
+    }
+
+    footer h3 {
+      color: #ffd700;
+    }
+
+    footer a {
+      color: gold;
+      text-decoration: none;
+    }
+
+    footer img {
+      margin-right: 10px;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.8rem;
+      background-color: #111;
+      color: #ccc;
+      padding: 1rem;
+      margin: 0;
     }
 
     @media screen and (max-width: 600px) {
@@ -87,6 +97,12 @@
       .hero p {
         font-size: 1rem;
       }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
     }
   </style>
 </head>
@@ -94,16 +110,49 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="tours.html">Tours</a>
-    <a href="About-us.html">About Us</a>
+    <a href="contact.html">Contact</a>
     <a href="index-zh.html">中文</a>
   </nav>
 
   <div class="hero">
-    <h1>Welcome to<br>KIWI SEASONS TRAVEL AGENCY LIMITED</h1>
-    <p>Discover New Zealand through unforgettable small-group journeys and customized experiences.</p>
+    <h1>
+      Welcome to<br>
+      <span>KIWI SEASONS TRAVEL AGENCY LIMITED</span>
+    </h1>
+    <p>Explore the real beauty of New Zealand with our small-group, personalized tours.</p>
     <div class="contact">
-      📧 Contact us: <a href="mailto:info@kiwiseasons.co.nz" style="color:#ffd700;">info@kiwiseasons.co.nz</a>
+      📧 Contact us: <a href="mailto:travel@kiwiseasons.co.nz" style="color:#ffd700;">travel@kiwiseasons.co.nz</a>
     </div>
+  </div>
+
+  <footer>
+    <div>
+      <h3>Why Choose Us</h3>
+      <p>✔ Unique and personal NZ travel experiences</p>
+      <p>✔ Small group sizes</p>
+      <p>✔ Customized tours</p>
+      <p>✔ Sustainable travel values</p>
+    </div>
+    <div>
+      <h3>Explore Our Tours</h3>
+      <p><a href="tours.html">Eco Tours</a></p>
+      <p><a href="tours.html">City Walks</a></p>
+      <p><a href="tours.html">South Island</a></p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Kiwi Seasons Travel</p>
+      <p><a href="mailto:travel@kiwiseasons.co.nz">travel@kiwiseasons.co.nz</a></p>
+      <p>
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WeChat" width="24" />
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="24" />
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" />
+      </p>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    © Kiwi Seasons Travel 2025 – Website proudly created by Sara Jin
   </div>
 </body>
 </html>
