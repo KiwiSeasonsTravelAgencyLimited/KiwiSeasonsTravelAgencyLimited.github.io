@@ -95,6 +95,25 @@
       margin-bottom: 0.5rem;
     }
 
+    .itinerary-day {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 2rem;
+      gap: 1.5rem;
+    }
+
+    .itinerary-day img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .itinerary-text {
+      flex: 1;
+    }
+
     a.button, .floating-button {
       background-color: #007b5e;
       color: white;
@@ -193,22 +212,21 @@
     <p>Activities chosen during designated free time are not included.</p>
 
     <h2>Daily Itinerary</h2>
-    <h3>Day 1: Christchurch</h3>
-    <p>Arrival, airport pickup, optional city tour, overnight in Christchurch.</p>
-    <h3>Day 2: Tekapo & Mt. Cook</h3>
-    <p>Drive to Lake Tekapo, visit Church of the Good Shepherd, stargazing option at night, continue to Mt. Cook National Park for alpine views.</p>
-    <h3>Day 3: Lake Pukaki – Wanaka</h3>
-    <p>Scenic drive with stops at Lake Pukaki and salmon farm, overnight in Wanaka.</p>
-    <h3>Day 4: Wanaka – Arrowtown – Queenstown</h3>
-    <p>Visit the iconic Wanaka tree, explore Arrowtown, arrive in Queenstown.</p>
-    <h3>Day 5: Queenstown Free Day</h3>
-    <p>Enjoy optional activities such as bungee, skydiving, or lake cruise.</p>
-    <h3>Day 6: Queenstown – Dunedin</h3>
-    <p>Drive through Central Otago, explore historic Dunedin city and beaches.</p>
-    <h3>Day 7: Moeraki Boulders – Oamaru</h3>
-    <p>See the famous round boulders and stop at Victorian-style Oamaru.</p>
-    <h3>Day 8: Timaru – Return to Christchurch</h3>
-    <p>Coastal lunch stop in Timaru before arriving back in Christchurch.</p>
+    <div class="itinerary-day">
+      <div class="itinerary-text">
+        <h3>Day 1: Christchurch</h3>
+        <p>Arrival, airport pickup, optional city tour, overnight in Christchurch.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1604917877933-7a2c0cdd08b7" alt="Christchurch" />
+    </div>
+
+    <div class="itinerary-day">
+      <div class="itinerary-text">
+        <h3>Day 2: Tekapo & Mt. Cook</h3>
+        <p>Drive to Lake Tekapo, visit Church of the Good Shepherd, stargazing at night, continue to Mt Cook.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1582072940843-bfdba1e2e986" alt="Lake Tekapo" />
+    </div>
 
     <h2>Perfect for:</h2>
     <p>First-time visitors to New Zealand | Couples & honeymooners | Families | Nature & photography lovers</p>
