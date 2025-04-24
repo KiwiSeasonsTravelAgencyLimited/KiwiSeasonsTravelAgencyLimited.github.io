@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,27 +43,23 @@
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.85);
-      border-radius: 6px;
-      min-width: 220px;
+      background-color: #444;
+      min-width: 160px;
       z-index: 1;
       text-align: left;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      padding: 0.5rem 0;
-      margin-top: 0.2rem;
     }
 
     .dropdown-content a {
       color: white;
-      padding: 1rem 1.5rem;
-      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
       display: block;
+      font-size: 0.95rem;
       text-decoration: none;
-      transition: background 0.3s ease;
+      white-space: nowrap; /* 防止自动换行 */
     }
 
     .dropdown-content a:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: #666;
     }
 
     .dropdown:hover .dropdown-content {
