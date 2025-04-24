@@ -70,19 +70,19 @@
       max-width: 1000px;
       margin: 2rem auto;
       padding: 1rem;
-      line-height: 1.8;
-      font-size: 1.05rem;
+      /*line-height: 1.8;*/
+      /*font-size: 1.05rem;*/
     }
 
-    
     .content-flex {
       display: flex;
       gap: 2rem;
       align-items: flex-start;
+      margin-bottom: 3rem;
     }
 
     .main-content {
-      flex: 2;
+      flex: 3;
     }
 
     .info-box {
@@ -93,6 +93,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       font-size: 0.95rem;
       line-height: 1.6;
+      margin-top: 0.4rem; 
     }
 
     .info-box h3 {
@@ -106,15 +107,33 @@
       margin: 0 0 1rem;
     }
 
-    @media screen and (max-width: 768px) {
-      .content-flex {
-        flex-direction: column;
-      }
+    .centered-section {
+      text-align: center;
+    }
 
-      .info-box {
-        width: 100%;
-        margin-top: 2rem;
-      }
+    .centered-section h2 {
+      font-size: 1.8rem;
+      color: #007b5e;
+      margin-top: 3rem;
+    }
+
+    .itinerary-day {
+      display: flex;
+      gap: 1.5rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      align-items: flex-start;
+    }
+
+    .itinerary-day img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .itinerary-text {
+      flex: 1;
     }
 
     h1 {
@@ -136,25 +155,6 @@
 
     ul li {
       margin-bottom: 0.5rem;
-    }
-
-    .itinerary-day {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-top: 2rem;
-      gap: 1.5rem;
-    }
-
-    .itinerary-day img {
-      max-width: 300px;
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-
-    .itinerary-text {
-      flex: 1;
     }
 
     a.button, .floating-button {
@@ -205,6 +205,18 @@
       padding: 1rem;
       margin: 0;
     }
+
+    @media (max-width: 900px) {
+      .intro-flex,
+      .itinerary-day {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .itinerary-day img {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -240,7 +252,33 @@
           <li>Timaru – A relaxing lunch stop by the sea before heading back to Christchurch.</li>
         </ul>
         <p>This small-group tour (2–5 people) offers an intimate and flexible travel experience with 100% sightseeing, no shopping stops, and no hidden fees. Whether you’re a couple, family, or solo traveler, you’ll enjoy the comfort of handpicked local accommodations and the insights of knowledgeable driver-guides.</p>
+      </div>
 
+      <div class="info-box">
+        <h3>Tour Duration</h3>
+        <p>8 Days / 7 Nights</p>
+        <h3>Departure City</h3>
+        <p>Christchurch</p>
+        <h3>Inclusions</h3>
+        <ul>
+          <li>Accommodation</li>
+          <li>Airport Transfers</li>
+          <li>Daily Transportation</li>
+          <li>Tickets for Scenic Spots</li>
+          <li>Driver-guide Support</li>
+        </ul>
+        <h3>Exclusions</h3>
+        <p>Activities during free time not included.</p>
+        <h3>Perfect for:</h3>
+        <p style="font-size: 0.85rem;">
+          Families<br>
+          Couples & honeymooners<br>
+          Nature & photography lovers
+          First-time visitors to New Zealand<br>
+        </p>
+      </div>
+
+      <div class="centered-section">
         <h2>Daily Itinerary</h2>
         <div class="itinerary-day">
           <div class="itinerary-text">
@@ -305,31 +343,7 @@
           </div>
           <img src="https://images.unsplash.com/photo-1534495572627-5f0dbbfe7f16" alt="Timaru to Christchurch">
         </div>
-      </div>        
-
-      <div class="info-box">
-        <h3>Tour Duration</h3>
-        <p>8 Days / 7 Nights</p>
-        <h3>Departure City</h3>
-        <p>Christchurch</p>
-        <h3>Inclusions</h3>
-        <ul>
-          <li>Accommodation</li>
-          <li>Airport Transfers</li>
-          <li>Daily Transportation</li>
-          <li>Tickets for Scenic Spots</li>
-          <li>Driver-guide Support</li>
-        </ul>
-        <h3>Exclusions</h3>
-        <p>Activities during free time not included.</p>
-        <h3>Perfect for:</h3>
-        <p style="font-size: 0.85rem;">
-          First-time visitors to New Zealand<br>
-          Couples & honeymooners<br>
-          Families<br>
-          Nature & photography lovers
-        </p>
-      </div>
+      </div>            
     </div>
   </div>
 
