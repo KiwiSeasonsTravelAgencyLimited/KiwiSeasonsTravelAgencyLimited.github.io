@@ -74,29 +74,47 @@
       font-size: 1.05rem;
     }
 
-    .info-box {
-      background-color: #f0f4f8;
-      border-left: 6px solid #007b5e;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    
+    .content-flex {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
     }
 
-    .info-box h2 {
-      margin-top: 0;
-      font-size: 1.4rem;
-      color: #007b5e;
+    .main-content {
+      flex: 2;
+    }
+
+    .info-box {
+      flex: 1;
+      background-color: #f0f4f8;
+      padding: 1.5rem;
+      border-left: 6px solid #007b5e;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
 
     .info-box h3 {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      color: #444;
+      margin: 0.8rem 0 0.4rem;
+      font-size: 1rem;
+      color: #007b5e;
     }
 
-    .info-box p, .info-box ul {
-      margin: 0.5rem 0;
-      font-size: 0.95rem;
+    .info-box ul {
+      padding-left: 1.2rem;
+      margin: 0 0 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .content-flex {
+        flex-direction: column;
+      }
+
+      .info-box {
+        width: 100%;
+        margin-top: 2rem;
+      }
     }
 
     h1 {
@@ -205,107 +223,113 @@
   </nav>
 
   <div class="container">
+    <div class="content-flex">
+      <div class="main-content">
+        <h1>8-day Private South Island Discovery</h1>
+        <p>Embark on an unforgettable 8-day small-group journey through New Zealand’s spectacular South Island. Starting and ending in Christchurch, this classic loop itinerary takes you through some of the country’s most iconic landscapes and charming towns – perfect for first-time visitors seeking a mix of nature, adventure, and cultural highlights.</p>
 
-    <div class="info-box">
-      <h2>Tour Duration: 8 Days / 7 Nights</h2>
-      <p><strong>Departure City:</strong> Christchurch</p>
+        <h2>Tour Highlights</h2>
+        <ul>
+          <li>Lake Tekapo & Church of the Good Shepherd – Marvel at turquoise waters and starry skies in the Dark Sky Reserve.</li>
+          <li>Mt. Cook National Park & Tasman Glacier – Discover New Zealand’s highest peak and enjoy optional scenic walks or glacier heli-hiking.</li>
+          <li>Lake Pukaki & Salmon Farm – Enjoy the pristine alpine scenery and taste fresh glacier-fed salmon.</li>
+          <li>Wānaka & Arrowtown – Visit the famous lone tree of Wānaka and stroll through the historic gold mining town.</li>
+          <li>Queenstown – Enjoy two free days in the adventure capital of the world. Optional activities include bungee jumping, skydiving, jet boating, or relaxing on the TSS Earnslaw steamship to a lakeside farm.</li>
+          <li>Moeraki Boulders & Katiki Lighthouse – Witness mysterious spherical stones and spot wild sea lions along the coast.</li>
+          <li>Oamaru – Discover Victorian architecture, penguin colonies, and steampunk art in this unique coastal town.</li>
+          <li>Timaru – A relaxing lunch stop by the sea before heading back to Christchurch.</li>
+        </ul>
+        <p>This small-group tour (2–5 people) offers an intimate and flexible travel experience with 100% sightseeing, no shopping stops, and no hidden fees. Whether you’re a couple, family, or solo traveler, you’ll enjoy the comfort of handpicked local accommodations and the insights of knowledgeable driver-guides.</p>
 
-      <h3>Inclusions:</h3>
-      <ul>
-        <li>Accommodation</li>
-        <li>Airport Transfers</li>
-        <li>Daily Transportation</li>
-        <li>Tickets For Some Scenic Spots</li>
-        <li>Sightseeing Support From Knowledgeable Driver-guides</li>
-      </ul>
+        <h2>Daily Itinerary</h2>
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <h3>Day 1: Christchurch</h3>
+            <p>Arrival, airport pickup, optional city tour, overnight in Christchurch.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1604917877933-7a2c0cdd08b7" alt="Christchurch" />
+        </div>
 
-      <h3>Exclusions:</h3>
-      <p>Activities chosen during designated free time are not included.</p>
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <h3>Day 2: Tekapo & Mt. Cook</h3>
+            <p>Drive to Lake Tekapo, visit Church of the Good Shepherd, stargazing at night, continue to Mt Cook.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1582072940843-bfdba1e2e986" alt="Lake Tekapo" />
+        </div>
 
-      <h3>Perfect for:</h3>
-      <p>First-time visitors to New Zealand | Couples & honeymooners | Families | Nature & photography lovers</p>
-    </div>
-    
-    <h1>8-day Private South Island Discovery</h1>
-    <p>Embark on an unforgettable 8-day small-group journey through New Zealand’s spectacular South Island. Starting and ending in Christchurch, this classic loop itinerary takes you through some of the country’s most iconic landscapes and charming towns – perfect for first-time visitors seeking a mix of nature, adventure, and cultural highlights.</p>
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <h3>Day 3: Lake Pukaki – Wanaka</h3>
+            <p>Stop at the brilliant blue Lake Pukaki with a view of Aoraki/Mt. Cook. Enjoy a visit to a local salmon farm, then continue to Wanaka for a peaceful evening by the lakefront.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1600677409899-fb4b303d4352" alt="Lake Pukaki to Wanaka">
+        </div>
 
-    <h2>Tour Highlights</h2>
-    <ul>
-      <li>Lake Tekapo & Church of the Good Shepherd – Marvel at turquoise waters and starry skies in the Dark Sky Reserve.</li>
-      <li>Mt. Cook National Park & Tasman Glacier – Discover New Zealand’s highest peak and enjoy optional scenic walks or glacier heli-hiking.</li>
-      <li>Lake Pukaki & Salmon Farm – Enjoy the pristine alpine scenery and taste fresh glacier-fed salmon.</li>
-      <li>Wānaka & Arrowtown – Visit the famous lone tree of Wānaka and stroll through the historic gold mining town.</li>
-      <li>Queenstown – Enjoy two free days in the adventure capital of the world. Optional activities include bungee jumping, skydiving, jet boating, or relaxing on the TSS Earnslaw steamship to a lakeside farm.</li>
-      <li>Moeraki Boulders & Katiki Lighthouse – Witness mysterious spherical stones and spot wild sea lions along the coast.</li>
-      <li>Oamaru – Discover Victorian architecture, penguin colonies, and steampunk art in this unique coastal town.</li>
-      <li>Timaru – A relaxing lunch stop by the sea before heading back to Christchurch.</li>
-    </ul>
-    <p>This small-group tour (2–5 people) offers an intimate and flexible travel experience with 100% sightseeing, no shopping stops, and no hidden fees. Whether you’re a couple, family, or solo traveler, you’ll enjoy the comfort of handpicked local accommodations and the insights of knowledgeable driver-guides.</p>
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <h3>Day 4: Wanaka – Arrowtown – Queenstown</h3>
+            <p>Visit the iconic Wanaka Tree, then drive to the historic gold mining town of Arrowtown. Arrive in Queenstown in the afternoon for optional lake cruise or skyline gondola ride.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1613214693565-f2f6d6673c53" alt="Wanaka Arrowtown Queenstown">
+        </div>
 
-    <h2>Daily Itinerary</h2>
-    <div class="itinerary-day">
-      <div class="itinerary-text">
-        <h3>Day 1: Christchurch</h3>
-        <p>Arrival, airport pickup, optional city tour, overnight in Christchurch.</p>
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <h3>Day 5: Queenstown Free Day</h3>
+            <p>Choose your own adventure! Try bungee jumping, skydiving, or just enjoy the stunning lake views and world-class cuisine at your own pace.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1586856201085-798d1b31eb30" alt="Queenstown Adventures">
+        </div>
+
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <h3>Day 6: Queenstown – Dunedin</h3>
+            <p>Travel through the beautiful Central Otago wine region to reach Dunedin, known for its Scottish heritage, wildlife, and Otago Peninsula cliffs.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1584168877296-8e01875dd3ec" alt="Dunedin Drive">
+        </div>
+
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <h3>Day 7: Moeraki Boulders – Oamaru</h3>
+            <p>Walk among the mysterious round boulders at Moeraki Beach and explore the steampunk capital Oamaru, home to Victorian streetscapes and penguin colonies.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1608023238916-d61c48b18df0" alt="Moeraki and Oamaru">
+        </div>
+
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <h3>Day 8: Timaru – Christchurch</h3>
+            <p>Enjoy a relaxing final day with a scenic lunch stop in Timaru before returning to Christchurch for your onward journey or flight.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1534495572627-5f0dbbfe7f16" alt="Timaru to Christchurch">
+        </div>
+
+        <div class="info-box">
+          <h3>Tour Duration</h3>
+          <p>8 Days / 7 Nights</p>
+          <h3>Departure City</h3>
+          <p>Christchurch</p>
+          <h3>Inclusions</h3>
+          <ul>
+            <li>Accommodation</li>
+            <li>Airport Transfers</li>
+            <li>Daily Transportation</li>
+            <li>Tickets for Scenic Spots</li>
+            <li>Driver-guide Support</li>
+          </ul>
+          <h3>Exclusions</h3>
+          <p>Activities during free time not included.</p>
+          <h3>Perfect for:</h3>
+          <p style="font-size: 0.85rem;">
+            First-time visitors to New Zealand<br>
+            Couples & honeymooners<br>
+            Families<br>
+            Nature & photography lovers
+          </p>
+        </div>
       </div>
-      <img src="https://images.unsplash.com/photo-1604917877933-7a2c0cdd08b7" alt="Christchurch" />
-    </div>
-
-    <div class="itinerary-day">
-      <div class="itinerary-text">
-        <h3>Day 2: Tekapo & Mt. Cook</h3>
-        <p>Drive to Lake Tekapo, visit Church of the Good Shepherd, stargazing at night, continue to Mt Cook.</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1582072940843-bfdba1e2e986" alt="Lake Tekapo" />
-    </div>
-
-    <div class="itinerary-day">
-      <div class="itinerary-text">
-        <h3>Day 3: Lake Pukaki – Wanaka</h3>
-        <p>Stop at the brilliant blue Lake Pukaki with a view of Aoraki/Mt. Cook. Enjoy a visit to a local salmon farm, then continue to Wanaka for a peaceful evening by the lakefront.</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1600677409899-fb4b303d4352" alt="Lake Pukaki to Wanaka">
-    </div>
-
-    <div class="itinerary-day">
-      <div class="itinerary-text">
-        <h3>Day 4: Wanaka – Arrowtown – Queenstown</h3>
-        <p>Visit the iconic Wanaka Tree, then drive to the historic gold mining town of Arrowtown. Arrive in Queenstown in the afternoon for optional lake cruise or skyline gondola ride.</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1613214693565-f2f6d6673c53" alt="Wanaka Arrowtown Queenstown">
-    </div>
-
-    <div class="itinerary-day">
-      <div class="itinerary-text">
-        <h3>Day 5: Queenstown Free Day</h3>
-        <p>Choose your own adventure! Try bungee jumping, skydiving, or just enjoy the stunning lake views and world-class cuisine at your own pace.</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1586856201085-798d1b31eb30" alt="Queenstown Adventures">
-    </div>
-
-    <div class="itinerary-day">
-      <div class="itinerary-text">
-        <h3>Day 6: Queenstown – Dunedin</h3>
-        <p>Travel through the beautiful Central Otago wine region to reach Dunedin, known for its Scottish heritage, wildlife, and Otago Peninsula cliffs.</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1584168877296-8e01875dd3ec" alt="Dunedin Drive">
-    </div>
-
-    <div class="itinerary-day">
-      <div class="itinerary-text">
-        <h3>Day 7: Moeraki Boulders – Oamaru</h3>
-        <p>Walk among the mysterious round boulders at Moeraki Beach and explore the steampunk capital Oamaru, home to Victorian streetscapes and penguin colonies.</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1608023238916-d61c48b18df0" alt="Moeraki and Oamaru">
-    </div>
-
-    <div class="itinerary-day">
-      <div class="itinerary-text">
-        <h3>Day 8: Timaru – Christchurch</h3>
-        <p>Enjoy a relaxing final day with a scenic lunch stop in Timaru before returning to Christchurch for your onward journey or flight.</p>
-      </div>
-      <img src="https://images.unsplash.com/photo-1534495572627-5f0dbbfe7f16" alt="Timaru to Christchurch">
-    </div>
   </div>
 
   <a class="floating-button" href="mailto:info@kiwiseasons.co.nz?subject=8-day%20South%20Island%20Tour%20Booking">
