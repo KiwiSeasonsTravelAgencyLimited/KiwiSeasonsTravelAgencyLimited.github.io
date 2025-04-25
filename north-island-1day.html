@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8-day South Island Tour | KIWI SEASONS TRAVEL AGENCY LIMITED</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.6rem 1rem;
+      display: inline-block;
+      font-size: 1rem;
+      line-height: 1;
+      vertical-align: middle;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      border-radius: 8px;
+      min-width: 180px;
+      z-index: 1;
+      text-align: left;
+      padding: 0.6rem 0.2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 0.7rem 1.2rem;
+      display: block;
+      font-size: 0.95rem;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #666;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      padding: 1.5rem;
+    }
+
+    .content-flex {
+      display: flex;
+      gap: 5rem;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+
+    .main-content {
+      flex: 3;
+    }
+
+    .info-box {
+      flex: 1;
+      background-color: #f0f4f8;
+      padding: 1.5rem;
+      border-left: 6px solid #007b5e;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-top: 1rem; 
+    }
+
+    .info-box h3 {
+      margin: 1rem 0 0.4rem;
+      font-size: 1.5rem;
+      color: #007b5e;
+    }
+
+    .info-box ul {
+      padding-left: 1.2rem;
+      margin: 0 0 1rem;
+    }
+
+    .centered-section {
+      text-align: center;
+    }
+
+    .centered-section h2 {
+      font-size: 1.8rem;
+      color: #007b5e;
+      margin-top: 2rem;
+    }
+
+    .itinerary-day {
+      display: flex;
+      gap: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      align-items: flex-start;
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .itinerary-day img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .itinerary-text {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 1.6rem;
+      color: #007b5e;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
+      color: #333;
+    }
+
+    ul li {
+      margin-bottom: 0.7rem;
+    }
+
+    a.button, .floating-button {
+      background-color: #007b5e;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .floating-button {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: left;
+    }
+
+    footer h3 {
+      color: #ffd700;
+    }
+
+    footer a {
+      color: gold;
+      text-decoration: none;
+    }
+
+    footer img {
+      margin-right: 10px;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.8rem;
+      background-color: #111;
+      color: #ccc;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .dropdown-content {
+        position: static;
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: none;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .content-flex,
+      .itinerary-day {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .itinerary-day img {
+        width: 100%;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a style="pointer-events: none; cursor: default;">Tours &#709;</a>
+      <div class="dropdown-content">
+        <a href="south-island.html">South Island</a>
+        <a href="north-island.html">North Island</a>
+        <a href="twin-island.html">Twin Island Discovery</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact Us</a>
+    <a href="index-zh.html">EN/中</a>
+  </nav>
+
+  <div class="container">
+    <h1>8-day Private South Island Discovery</h1>
+    <div class="content-flex">
+      <div class="main-content">
+        <p>Embark on an unforgettable 8-day small-group journey through New Zealand’s spectacular South Island. Starting and ending in Christchurch, this classic loop itinerary takes you through some of the country’s most iconic landscapes and charming towns – perfect for first-time visitors seeking a mix of nature, adventure, and cultural highlights.</p>
+
+        <h2>Tour Highlights</h2>
+        <ul>
+          <li>Lake Tekapo & Church of the Good Shepherd – Marvel at turquoise waters and starry skies in the Dark Sky Reserve.</li>
+          <li>Mt. Cook National Park & Tasman Glacier – Discover New Zealand’s highest peak and enjoy optional scenic walks or glacier heli-hiking.</li>
+          <li>Lake Pukaki & Salmon Farm – Enjoy the pristine alpine scenery and taste fresh glacier-fed salmon.</li>
+          <li>Wānaka & Arrowtown – Visit the famous lone tree of Wānaka and stroll through the historic gold mining town.</li>
+          <li>Queenstown – Enjoy two free days in the adventure capital of the world. Optional activities include bungee jumping, skydiving, jet boating, or relaxing on the TSS Earnslaw steamship to a lakeside farm.</li>
+          <li>Moeraki Boulders & Katiki Lighthouse – Witness mysterious spherical stones and spot wild sea lions along the coast.</li>
+          <li>Oamaru & Timaru – Explore Victorian streets and penguin colonies in Oamaru, then enjoy a relaxing seaside lunch in Timaru before returning to Christchurch.</li>
+        </ul>
+        <p>Travel in a small group (2–5 people) with no shopping stops or hidden fees. Enjoy handpicked stays and local insights from experienced driver-guides.</p>
+      </div>
+  
+      <div class="info-box">
+        <h3>Tour Duration:</h3>
+        <p>8 Days / 7 Nights</p>
+        <h3>Departure City:</h3>
+        <p>Christchurch</p>
+        <h3>Inclusions:</h3>
+        <ul>
+          <li>Accommodation</li>
+          <li>Airport Transfers</li>
+          <li>Daily Transportation</li>
+          <li>Tickets for Scenic Spots</li>
+          <li>Driver-guide Support</li>
+        </ul>
+        <h3>Exclusions:</h3>
+        <p>Activities during free time not included.</p>
+        <h3>Perfect for:</h3>
+        <ul>
+          <li>Families</li>
+          <li>Couples & honeymooners</li>
+          <li>Nature & photography lovers</li>
+          <li>First-time visitors to New Zealand</li>
+        </ul>
+
+        <p style="font-weight: bold; color: #d9534f;">
+          * Advanced booking required
+        </p>
+      </div>
+    </div>
+    <div class="centered-section">
+        <h2>A Glimpse of Your North Island Adventure</h2>
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <p>From Hobbit holes to glowworm-lit caves — here’s a visual preview of your journey!</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1604917877933-7a2c0cdd08b7" alt="Christchurch" />
+        </div>
+      </div>
+    </div>
+
+  <a class="floating-button" href="mailto:info@kiwiseasons.co.nz?subject=8-day%20South%20Island%20Tour%20Booking">
+    📩 Contact us to book
+  </a>
+
+  <footer>
+    <div>
+      <h3>Why Choose Us</h3>
+      <p>✔ Unique and personal NZ travel experiences</p>
+      <p>✔ Small group sizes</p>
+      <p>✔ Customized tours</p>
+      <p>✔ Sustainable travel values</p>
+    </div>
+    <div>
+      <h3>Explore Our Tours</h3>
+      <p><a href="south-island.html">South Island</a></p>
+      <p><a href="north-island.html">North Island</a></p>
+      <p><a href="twin-island.html">Twin Island Discovery</a></p>
+    </div>
+    <div>
+      <h3>Contact Us</h3>
+      <p>Kiwi Seasons Travel Agency Limited</p>
+      <p><a href="mailto:info@kiwiseasons.co.nz">info@kiwiseasons.co.nz</a></p>
+      <p>
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WeChat" width="24" />
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="24" />
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" />
+      </p>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    © 2025 Kiwi Seasons Travel Agency Limited
+  </div>
+</body>
+</html>
