@@ -75,6 +75,49 @@
       display: block;
     }
 
+    .about-custom, .custom-tour {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: left;
+    }
+
+    .about-custom img,
+    .custom-tour img {
+      width: 400px;
+      height: auto;
+      border-radius: 10px;
+      margin: 1rem;
+    }
+
+    .about-custom .text-box,
+    .custom-tour .text-box {
+      max-width: 500px;
+      margin: 1rem;
+    }
+
+    .about-custom h2,
+    .custom-tour h2 {
+      color: #ffd700;
+    }
+
+    .custom-button {
+      background-color: #007b5e;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    
+
     .hero {
       padding: 10vh 2rem;
       background-color: rgba(0, 0, 0, 0.5);
@@ -152,6 +195,16 @@
         display: block;
       }
 
+      .about-custom, .custom-tour {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-custom .text-box,
+      .custom-tour .text-box {
+        text-align: center;
+      }
+
       .hero h1 {
         font-size: 2rem;
       }
@@ -193,6 +246,23 @@
       📧 Contact us: <a href="mailto:info@kiwiseasons.co.nz" style="color:#ffd700;">info@kiwiseasons.co.nz</a>
     </div>
   </div>
+
+  <section class="about-custom">
+    <img src="https://via.placeholder.com/400x300?text=About+Us" alt="About Kiwi Seasons">
+    <div class="text-box">
+      <h2>About Us</h2>
+      <p>Kiwi Seasons Travel Agency is dedicated to offering unique, small-group experiences across Aotearoa New Zealand. Our team of passionate locals is committed to showing you the best of the country — from hidden gems to iconic sights — all tailored with care and authenticity.</p>
+    </div>
+  </section>
+
+  <section class="custom-tour">
+    <div class="text-box">
+      <h2>Private Customized Tours</h2>
+      <p>If you have specific travel preferences or needs, don’t hesitate to reach out. We would love to help you plan everything in advance, so you can start your journey with peace of mind. Creating a trip tailored just for you is our greatest pleasure!</p>
+      <p><a href="mailto:info@kiwiseasons.co.nz?subject=Private%20Customized%20Tour%20Request" class="custom-button">📩 Contact us for a personalized itinerary</a></p>
+    </div>
+    <img src="https://via.placeholder.com/400x300?text=Tailored+Trip" alt="Custom Tour">
+  </section>
 
   <footer>
     <div>
