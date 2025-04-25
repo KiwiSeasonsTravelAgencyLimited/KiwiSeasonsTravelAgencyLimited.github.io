@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3-Day North Island Highlights Tour | KIWI SEASONS TRAVEL AGENCY LIMITED</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.6rem 1rem;
+      display: inline-block;
+      font-size: 1rem;
+      line-height: 1;
+      vertical-align: middle;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      border-radius: 8px;
+      min-width: 180px;
+      z-index: 1;
+      text-align: left;
+      padding: 0.6rem 0.2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 0.7rem 1.2rem;
+      display: block;
+      font-size: 0.95rem;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #666;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      padding: 1.5rem;
+    }
+
+    .content-flex {
+      display: flex;
+      gap: 5rem;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+
+    .main-content {
+      flex: 3;
+    }
+
+    .info-box {
+      flex: 1;
+      background-color: #f0f4f8;
+      padding: 1.5rem;
+      border-left: 6px solid #007b5e;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-top: 1rem; 
+    }
+
+    .info-box h3 {
+      margin: 1rem 0 0.4rem;
+      font-size: 1.5rem;
+      color: #007b5e;
+    }
+
+    .info-box ul {
+      padding-left: 1.2rem;
+      margin: 0 0 1rem;
+    }
+
+    .centered-section {
+      text-align: center;
+    }
+
+    .centered-section h2 {
+      font-size: 1.8rem;
+      color: #007b5e;
+      margin-top: 2rem;
+    }
+
+    .itinerary-day {
+      display: flex;
+      gap: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      align-items: flex-start;
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .itinerary-day img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .itinerary-text {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 1.6rem;
+      color: #007b5e;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
+      color: #333;
+    }
+
+    ul li {
+      margin-bottom: 0.7rem;
+    }
+
+    a.button, .floating-button {
+      background-color: #007b5e;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .floating-button {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: left;
+    }
+
+    footer h3 {
+      color: #ffd700;
+    }
+
+    footer a {
+      color: gold;
+      text-decoration: none;
+    }
+
+    footer img {
+      margin-right: 10px;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.8rem;
+      background-color: #111;
+      color: #ccc;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .dropdown-content {
+        position: static;
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: none;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .content-flex,
+      .itinerary-day {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .itinerary-day img {
+        width: 100%;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a style="pointer-events: none; cursor: default;">Tours &#709;</a>
+      <div class="dropdown-content">
+        <a href="south-island.html">South Island</a>
+        <a href="north-island.html">North Island</a>
+        <a href="twin-island.html">Twin Island Discovery</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact Us</a>
+    <a href="index-zh.html">EN/中</a>
+  </nav>
+
+  <div class="container">
+    <h1>3-Day North Island Highlights Tour</h1>
+    <div class="content-flex">
+      <div class="main-content">
+        <p>Explore New Zealand's iconic North Island with Kiwi Seasons Travel on this carefully designed 3-day, 2-night small group tour. Departing from Auckland, this journey takes you through the magical Hobbiton Movie Set, the enchanting Waitomo Glowworm Caves, the geothermal wonders of Rotorua, and the charming Hamilton Gardens. Perfect for first-time visitors seeking a rich experience of New Zealand’s natural beauty and cultural heritage.</p>
+
+        <h2>Tour Highlights</h2>
+        <ul>
+          <li>Hobbiton Movie Set: Step into the world of The Lord of the Rings and The Hobbit films, exploring the lush rolling hills of the Shire and the iconic Green Dragon Inn.</li>
+          <li>Waitomo Glowworm Caves: Drift through underground rivers beneath a galaxy of glowing worms, in one of New Zealand’s most magical natural wonders.</li>
+          <li>Agrodome Farm Tour: Experience authentic Kiwi farm life, meet farm animals, and enjoy an entertaining sheep shearing show.</li>
+          <li>Geothermal Wonders: Visit the bubbling mud pools and erupting geysers of Hell’s Gate and Te Puia Geothermal Parks.</li>
+          <li>Māori Culture: Discover the rich traditions of the Māori people, witness cultural performances, and marvel at the famous Pohutu Geyser.</li>
+          <li>Redwoods Forest Walk: Stroll among towering redwood trees and enjoy the fresh air and scenic walking trails.</li>
+          <li>Hamilton Gardens: Wander through internationally acclaimed themed gardens that celebrate the relationship between people and plants across different civilizations.</li>
+        </ul>
+        <p>This small-group tour (2–5 people) offers comfortable local stays, flexible itineraries, and 100% sightseeing with no shopping stops or hidden costs — ideal for couples, families, and relaxed travellers.</p>
+      </div>
+  
+      <div class="info-box">
+        <h3>Tour Duration:</h3>
+        <p>3 Days / 2 Nights</p>
+        <h3>Departure City:</h3>
+        <p>Auckland</p>
+        <h3>Inclusions:</h3>
+        <ul>
+          <li>Accommodation</li>
+          <li>Airport Transfers</li>
+          <li>Daily Transportation</li>
+          <li>Tickets for Scenic Spots</li>
+          <li>Driver-guide Support</li>
+        </ul>
+        <h3>Exclusions:</h3>
+        <p>Activities during free time not included.</p>
+        <h3>Perfect for:</h3>
+        <ul>
+          <li>Families</li>
+          <li>Couples & honeymooners</li>
+          <li>Nature & photography lovers</li>
+          <li>First-time visitors to New Zealand</li>
+          <li>The Lord of the Rings / Hobbit fans</li>
+        </ul>
+
+        <p style="font-weight: bold; color: #d9534f;">
+          * Advanced booking required
+        </p>
+      </div>
+    </div>
+    <div class="centered-section">
+        <h2>Daily Itinerary</h2>
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <h3>Day 1: Auckland – Hobbiton – Waitomo – Rotorua</h3>
+            <p>Visit the famous Hobbiton Movie Set and explore the magical Waitomo Glowworm Caves before heading to Rotorua for a relaxing evening.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1604917877933-7a2c0cdd08b7" alt="Christchurch" />
+        </div>
+
+        <div class="itinerary-day">
+            <div class="itinerary-text">
+            <h3>Day 2: Rotorua Highlights</h3>
+            <p>Enjoy a hands-on farm tour at Agrodome, experience Rotorua’s geothermal wonders, and immerse yourself in Māori culture at Te Puia.</p>
+            </div>
+          <img src="https://images.unsplash.com/photo-1582072940843-bfdba1e2e986" alt="Lake Tekapo" />
+        </div>
+
+        <div class="itinerary-day">
+          <div class="itinerary-text">
+            <h3>Day 3: Rotorua – Redwoods – Hamilton – Auckland</h3>
+            <p>Stroll through the towering Redwoods Forest, discover the unique themed gardens in Hamilton, then return to Auckland to conclude the journey.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1600677409899-fb4b303d4352" alt="Lake Pukaki to Wanaka">
+        </div>
+      </div>
+    </div>
+
+  <a class="floating-button" href="mailto:info@kiwiseasons.co.nz?subject=8-day%20South%20Island%20Tour%20Booking">
+    📩 Contact us to book
+  </a>
+
+  <footer>
+    <div>
+      <h3>Why Choose Us</h3>
+      <p>✔ Unique and personal NZ travel experiences</p>
+      <p>✔ Small group sizes</p>
+      <p>✔ Customized tours</p>
+      <p>✔ Sustainable travel values</p>
+    </div>
+    <div>
+      <h3>Explore Our Tours</h3>
+      <p><a href="south-island.html">South Island</a></p>
+      <p><a href="north-island.html">North Island</a></p>
+      <p><a href="twin-island.html">Twin Island Discovery</a></p>
+    </div>
+    <div>
+      <h3>Contact Us</h3>
+      <p>Kiwi Seasons Travel Agency Limited</p>
+      <p><a href="mailto:info@kiwiseasons.co.nz">info@kiwiseasons.co.nz</a></p>
+      <p>
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WeChat" width="24" />
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="24" />
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" />
+      </p>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    © 2025 Kiwi Seasons Travel Agency Limited
+  </div>
+</body>
+</html>
