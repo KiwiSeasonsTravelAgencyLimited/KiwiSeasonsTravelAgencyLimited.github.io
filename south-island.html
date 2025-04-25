@@ -19,6 +19,7 @@
       justify-content: center;
       gap: 2rem;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -27,6 +28,7 @@
       font-weight: bold;
       padding: 0.6rem 1rem;
       display: inline-block;
+      font-size: 1rem;
       line-height: 1;
       vertical-align: middle;
     }
@@ -54,7 +56,7 @@
       display: block;
       font-size: 0.95rem;
       text-decoration: none;
-      white-space: nowrap; /* 防止自动换行 */
+      white-space: nowrap;
       transition: background-color 0.3s ease;
     }
 
@@ -85,7 +87,7 @@
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      min-height: 250px; /* 设置固定高度 */
+      min-height: 250px;
     }
 
     .tour img {
@@ -139,14 +141,38 @@
       padding: 1rem;
       margin: 0;
     }
+
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .dropdown-content {
+        position: static;
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: none;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+    }
   </style>
 </head>
 <body>
   <nav>
     <a href="index.html">Home</a>
     <div class="dropdown">
-        <a style="pointer-events: none; cursor: default;">Tours &#709;</a>
-        <div class="dropdown-content">
+      <a style="pointer-events: none; cursor: default;">Tours &#709;</a>
+      <div class="dropdown-content">
         <a href="south-island.html">South Island</a>
         <a href="north-island.html">North Island</a>
         <a href="twin-island.html">Twin Island Discovery</a>
